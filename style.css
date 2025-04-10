@@ -17,7 +17,7 @@ section {
   padding: 2rem 1rem;
   max-width: 800px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.8); /* adds readability over background */
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
 }
 
@@ -52,4 +52,12 @@ footer {
   background-color: #111;
   color: #777;
   font-size: 0.9rem;
+}
+
+/* Smaller banner on phones */
+@media (max-width: 600px) {
+  .banner-image {
+    height: 120px;
+    object-fit: cover;
+  }
 }
