@@ -1,33 +1,24 @@
-/* style.css */
 body {
-  background-color: #000;
+  background: url('art1.gif') no-repeat center center fixed;
+  background-size: cover;
   color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(to bottom, #c0392b, #000); /* red gradient */
-}
-
-header.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  color: #ff4c4c; /* bright red */
-}
-
-header.hero p {
-  font-size: 1.25rem;
-  color: #ffffff;
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #c0392b;
 }
 
 section {
   padding: 2rem 1rem;
   max-width: 800px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8); /* adds readability over background */
+  border-radius: 8px;
 }
 
 section h2 {
