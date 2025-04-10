@@ -1,0 +1,64 @@
+/* style.css */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to bottom, #31c9c4, #000);
+}
+
+header.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #6ff1ec;
+}
+
+header.hero p {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section h2 {
+  color: #6ff1ec;
+  border-bottom: 2px solid #31c9c4;
+  padding-bottom: 0.5rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery img {
+  max-width: 300px;
+  width: 100%;
+  border: 2px solid #31c9c4;
+  border-radius: 8px;
+}
+
+.contact a {
+  color: #6ff1ec;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #111;
+  color: #777;
+  font-size: 0.9rem;
+}
