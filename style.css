@@ -10,13 +10,13 @@ body {
 header.hero {
   text-align: center;
   padding: 3rem 1rem;
-  background: linear-gradient(to bottom, #31c9c4, #000);
+  background: linear-gradient(to bottom, #c0392b, #000); /* red gradient */
 }
 
 header.hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: #6ff1ec;
+  color: #ff4c4c; /* bright red */
 }
 
 header.hero p {
@@ -31,8 +31,8 @@ section {
 }
 
 section h2 {
-  color: #6ff1ec;
-  border-bottom: 2px solid #31c9c4;
+  color: #ff4c4c;
+  border-bottom: 2px solid #c0392b;
   padding-bottom: 0.5rem;
 }
 
@@ -46,12 +46,12 @@ section h2 {
 .gallery img {
   max-width: 300px;
   width: 100%;
-  border: 2px solid #31c9c4;
+  border: 2px solid #c0392b;
   border-radius: 8px;
 }
 
 .contact a {
-  color: #6ff1ec;
+  color: #ff4c4c;
   text-decoration: none;
 }
 
