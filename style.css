@@ -15,10 +15,29 @@ body {
 
 section {
   padding: 2rem 1rem;
-  max-width: 900px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 8px;
+}
+
+/* Keep these sections centered */
+section.about,
+section.contact {
+  max-width: 900px;
+}
+
+/* Portfolio full-width only on desktop */
+@media (min-width: 900px) {
+  section.portfolio {
+    max-width: 100%;
+    background-color: transparent;
+    padding: 2rem 4rem;
+  }
+
+  .gallery {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 section h2 {
@@ -66,7 +85,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Make banner smaller only on phones */
+/* Smaller banner on phones */
 @media (max-width: 600px) {
   .banner-image {
     height: 120px;
@@ -74,7 +93,7 @@ footer {
   }
 }
 
-/* Desktop: Make some artworks span more space */
+/* Desktop grid layout with some images larger */
 @media (min-width: 900px) {
   .gallery {
     display: grid;
