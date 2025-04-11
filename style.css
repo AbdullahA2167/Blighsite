@@ -25,17 +25,19 @@ section.contact {
   max-width: 900px;
 }
 
-/* Wider and more breathable layout for portfolio */
 @media (min-width: 900px) {
   section.portfolio {
-    max-width: 1400px;
+    max-width: 100%;
+    padding: 4rem 8rem; /* much wider padding on desktop */
     background-color: transparent;
-    padding: 3rem 5rem;
   }
 
   .gallery {
-    max-width: 100%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 3rem; /* big gaps between artworks */
+    justify-items: center;
+    align-items: start;
   }
 }
 
@@ -46,26 +48,19 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
 .gallery a {
   display: block;
-  flex: 1 1 300px;
-  max-width: 320px;
+  width: 100%;
+  max-width: 420px;
 }
 
 .gallery img {
   width: 100%;
   height: auto;
+  object-fit: contain;
   border: 2px solid #c0392b;
   border-radius: 8px;
   transition: transform 0.2s;
-  object-fit: contain; /* ensures full artwork is visible */
 }
 
 .gallery img:hover {
@@ -85,7 +80,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Smaller banner on phones */
+/* Make banner smaller on phones */
 @media (max-width: 600px) {
   .banner-image {
     height: 120px;
@@ -93,23 +88,11 @@ footer {
   }
 }
 
-/* Desktop grid layout with some images larger */
+/* Let certain artworks span larger in the grid */
 @media (min-width: 900px) {
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
   .gallery a:nth-child(2),
   .gallery a:nth-child(5),
   .gallery a:nth-child(9) {
     grid-column: span 2;
-    grid-row: span 2;
-  }
-
-  .gallery img {
-    object-fit: contain; /* don't crop */
-    height: auto; /* keep full image shown */
   }
 }
