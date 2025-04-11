@@ -22,20 +22,39 @@ section {
 
 section.about,
 section.contact {
-  max-width: 1500px;
+  max-width: 1100px;
+}
+
+/* Center & style About Me section */
+section.about {
+  text-align: center;
+}
+
+section.about h2 {
+  font-size: 2.5rem;
+  color: #ff4c4c;
+  margin-bottom: 1rem;
+}
+
+section.about p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 @media (min-width: 1000px) {
   section.portfolio {
     max-width: 100%;
-    padding: 4rem 8rem; /* much wider padding on desktop */
+    padding: 4rem 8rem;
     background-color: transparent;
   }
 
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 3rem; /* big gaps between artworks */
+    gap: 3rem;
     justify-items: center;
     align-items: start;
   }
@@ -80,7 +99,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Make banner smaller on phones */
+/* Banner adjustment for phones */
 @media (max-width: 600px) {
   .banner-image {
     height: 120px;
@@ -88,11 +107,9 @@ footer {
   }
 }
 
-/* Let certain artworks span larger in the grid */
+/* Let some images span larger in the grid */
 @media (min-width: 900px) {
   .gallery a:nth-child(2),
   .gallery a:nth-child(5),
   .gallery a:nth-child(9) {
-    grid-column: span 2;
-  }
-}
+    grid-column: span
