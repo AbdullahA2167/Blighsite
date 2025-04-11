@@ -22,10 +22,10 @@ section {
 
 section.about,
 section.contact {
-  max-width: 900px;
+  max-width: 1500px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   section.portfolio {
     max-width: 100%;
     padding: 4rem 8rem; /* much wider padding on desktop */
